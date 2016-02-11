@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NoiseMaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="86d-Kd-yYB">
+                                <rect key="frame" x="180" y="148" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.63094139099121094" green="0.31310760974884033" blue="0.84847396612167358" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays a guitar sound" label="Guitar">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="foo-0a-IKE"/>
+                                    <constraint firstAttribute="width" constant="100" id="uwI-By-j4l"/>
+                                </constraints>
+                                <state key="normal" image="GuitarIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nge-tR-DDs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTf-JM-pey">
+                                <rect key="frame" x="320" y="148" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.63094139099121094" green="0.31310760974884033" blue="0.84847396612167358" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays applause sound" label="Applause">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3bo-W3-STn"/>
+                                    <constraint firstAttribute="height" constant="100" id="icJ-Av-rS1"/>
+                                </constraints>
+                                <state key="normal" image="ApplauseIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AGe-y2-48E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc6-R9-qug">
+                                <rect key="frame" x="321" y="286" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.63094139099121094" green="0.31310760974884033" blue="0.84847396612167358" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays bubbles sound" label="Bubbles">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Pbv-8w-i3b"/>
+                                    <constraint firstAttribute="width" constant="100" id="i9q-GY-dyn"/>
+                                </constraints>
+                                <state key="normal" image="BubblesIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgD-4d-dtC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title" translatesAutoresizingMaskIntoConstraints="NO" id="HD6-fP-AM2">
+                                <rect key="frame" x="225" y="50" width="150" height="75"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLN-PD-iRa">
+                                <rect key="frame" x="180" y="286" width="100" height="100"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.63094139099121094" green="0.31310760974884033" blue="0.84847396612167358" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="Plays monster sound" label="Monster">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="How-Hf-qOD"/>
+                                    <constraint firstAttribute="width" constant="100" id="YMQ-ee-3BV"/>
+                                </constraints>
+                                <state key="normal" image="MonsterIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZiY-IU-daE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NTf-JM-pey" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="IHW-If-hh0"/>
+                            <constraint firstItem="HD6-fP-AM2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="ITZ-Vi-qWK"/>
+                            <constraint firstAttribute="centerX" secondItem="86d-Kd-yYB" secondAttribute="centerX" constant="70" id="aNm-3k-Hk4"/>
+                            <constraint firstAttribute="centerX" secondItem="yc6-R9-qug" secondAttribute="centerX" constant="-71" id="bLE-U5-1Nd"/>
+                            <constraint firstItem="yc6-R9-qug" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="etL-9s-rWN"/>
+                            <constraint firstAttribute="centerX" secondItem="HD6-fP-AM2" secondAttribute="centerX" id="hrI-aK-wtw"/>
+                            <constraint firstItem="86d-Kd-yYB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="128" id="nFw-tu-bpO"/>
+                            <constraint firstItem="cLN-PD-iRa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="nXQ-aX-afE"/>
+                            <constraint firstAttribute="centerX" secondItem="NTf-JM-pey" secondAttribute="centerX" constant="-70" id="o3f-pC-VQc"/>
+                            <constraint firstAttribute="centerX" secondItem="cLN-PD-iRa" secondAttribute="centerX" constant="70" id="smb-DV-J69"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ApplauseIcon" width="55" height="62"/>
+        <image name="BubblesIcon" width="43" height="70"/>
+        <image name="GuitarIcon" width="60" height="65"/>
+        <image name="MonsterIcon" width="63" height="76"/>
+        <image name="Title" width="150" height="75"/>
+    </resources>
+</document>
