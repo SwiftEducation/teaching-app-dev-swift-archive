@@ -1,6 +1,8 @@
-# Teaching App Development with Swift
+# Course Materials Archive
 
 First time seeing these materials? Visit the [Teaching App Development with Swift](http://swifteducation.github.io/teaching_app_development_with_swift/) site.
+
+## Teaching App Development with Swift
 
 This repository is generated from the source materials in the various [Swift Education repositories](http://github.com/swifteducation). It serves as a means for delivering an all-in-one download containing all instructor guides, presentations, and Xcode projects found on the [Teaching App Development with Swift](http://swifteducation.github.io/teaching_app_development_with_swift/) site.
 
